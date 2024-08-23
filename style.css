@@ -10,4 +10,9 @@
     display: flex;
     justify-content: center;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+.clicked {
+    background-color: aqua;
 }

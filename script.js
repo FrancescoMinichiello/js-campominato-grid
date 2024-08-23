@@ -36,7 +36,10 @@ function createCell(number) {
     const cell = document.createElement('div');
     cell.className = 'cell';
     cell.innerHTML = number;
-
+    cell.addEventListener('click', function () {
+        console.log(number)
+        cell.classList.toggle('clicked')
+    });
     return cell;
 }
 
@@ -59,3 +62,4 @@ button.addEventListener('click', function () {
     }
     grid.classList.remove('d-none')
 })
+
