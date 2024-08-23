@@ -16,7 +16,8 @@ Al click del bottone play, vengono generate 100 celle in 10 righe da 10 celle ci
 #MILESTONE 3
 In ogni cella, deve comparire il numero corrispondente, in ordine da 1 a 100;
 #MILESTONE 4
-Al click sulla cella, stampiamo il numero della cella cliccata in console, poi coloriamo la cella d'azzurro!
+Al click sulla cella, stampiamo il numero della cella cliccata in console, poi coloriamo la 
+cella d'azzurro!
 # BONUS
 Aggiungere una select accanto al bottone di generazione, che fornisca una scelta tra tre diversi livelli 
 di difficoltà:
@@ -29,22 +30,32 @@ Note:
 
 */
 
+//! Funzioni
+//funzione per creare una cella
+function createCell(number) {
+    const cell = document.createElement('div');
+    cell.className = 'cell';
+    cell.innerHTML = number;
+
+    return cell;
+}
+
 // fase di preparazione
 //1recupero gli elementi dal dom
 const grid = document.getElementById('grid');
+const button = document.getElementById('play');
 
 //impostazioni iniziali
 const rows = 10;
 const cols = 10;
 const totalCells = rows * cols;
 
-//! Funzione per creare una cella
-for (let i = 0; i < totalCells, i++) {
-    const cell = document.createElement('div');
-    cell.className = 'cell';
+//! Fase di elaborazione
 
-
-    //inserisco la cella in pagina
-    grid.appendChild(cell);
-}
-console.log('cell')
+button.addEventListener('click', function () {
+    for (let i = 0; i < totalCells; i++) {
+        const cell = createCell(i + 1);
+        grid.appendChild(cell);
+    }
+    grid.classList.remove('d-none')
+})
