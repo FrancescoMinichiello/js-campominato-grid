@@ -1,9 +1,9 @@
-#container-cell {
+#grid {
     background-color: blue;
 }
 
-.my-div {
-    height: 100px;
-    width: 100px;
+.cell {
+    height: 70px;
+    width: 70px;
     background-color: yellowgreen;
 }

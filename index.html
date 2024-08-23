@@ -22,17 +22,17 @@
         <div class="container-fluid text-white bg-primary p-5">
             <div class="row align-items-center">
                 <div class="col">
-                    <h1>Il mio campo minato</h1>
+                    <h1>Campo minato</h1>
                 </div>
                 <div class="col text-end">
                     <form>
                         <span class="fs-5">Difficoltà: </span>
-                        <select name="" id="">
-                            <option value="">Easy</option>
-                            <option value="">Normal</option>
-                            <option value="">Hard</option>
+                        <select name="" id="level">
+                            <option value="1">Easy</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Hard</option>
                         </select>
-                        <button class="ms-2 px-3">Play</button>
+                        <button type="button" class="ms-2 px-3" id="play">Play</button>
                     </form>
                 </div>
             </div>
@@ -41,109 +41,9 @@
     </header>
     <main>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col d-flex flex-wrap gap-3 justify-content-center p-5" id="container-cell">
-
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
-                    <div class="my-div"></div>
+            <div class="row justify-content-center">
+                <div class="col-9 d-flex flex-wrap gap-3 justify-content-center p-5" id="grid">
+                    <!--Qui andranno le celle-->
                 </div>
             </div>
         </div>
